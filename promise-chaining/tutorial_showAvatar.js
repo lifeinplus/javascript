@@ -30,7 +30,7 @@ function showAvatar(githubUser) {
     });
 }
 
-loadJson("tutorial_fetch_user.json")
+loadJson("tutorial_showAvatar_user.json")
     .then(loadGithubUser)
     .then(showAvatar)
     .then(githubUser => {
