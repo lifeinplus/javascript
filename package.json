@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifeinplus/javascript.git"
+  },
+  "author": "Artem Denisov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lifeinplus/javascript/issues"
+  },
+  "homepage": "https://github.com/lifeinplus/javascript#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
