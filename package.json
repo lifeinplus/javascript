@@ -18,5 +18,9 @@
   "homepage": "https://github.com/lifeinplus/javascript#readme",
   "dependencies": {
     "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.2.0"
   }
 }
