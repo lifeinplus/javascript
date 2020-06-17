@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="http://example.com/file.zip">link1</a>
+<a href="http://ya.ru">link2</a>
+
+<script>
+    for (const element of document.body.children) {
+        if (element.matches("a[href$='zip']")) {
+            console.log("Archive link: " + element.href);
+        }
+    }
+</script>
+</body>
+</html>

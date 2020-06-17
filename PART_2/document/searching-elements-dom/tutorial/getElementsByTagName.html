@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <td>Age:</td>
+        <td>
+            <label>
+                <input type="radio" name="age" value="young" checked>less than 18
+            </label>
+            <label>
+                <input type="radio" name="age" value="mature">18-50
+            </label>
+            <label>
+                <input type="radio" name="age" value="senior">more than 50
+            </label>
+        </td>
+    </tr>
+</table>
+
+<script>
+    const inputs = document.getElementsByTagName("input");
+
+    for (const input of inputs) {
+        console.log(input.value + ": " +input.checked);
+    }
+</script>
+</body>
+</html>

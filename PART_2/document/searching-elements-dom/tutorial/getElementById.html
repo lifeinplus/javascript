@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="elem">
+    <div id="elem-content">Element1</div>
+</div>
+
+<script>
+    const element = document.getElementById("elem");
+    element.style.background = "red";
+    window["elem-content"].innerHTML = "Element2";
+</script>
+</body>
+</html>

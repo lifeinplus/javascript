@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>aaa</li>
+    <li>bbb</li>
+</ul>
+<ul>
+    <li>ccc</li>
+    <li>ddd</li>
+</ul>
+
+<script>
+    const elements = document.querySelectorAll("ul > li:last-child");
+
+    for (const element of elements) {
+        console.log(element.innerHTML);
+    }
+</script>
+</body>
+</html>
