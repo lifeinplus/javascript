@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="input" type="checkbox" checked> checkbox
+<div id="div" style="color: red;font-size: 120%" a-a-a="bbb">Hello</div>
+<a id="a" href="#hello">link</a>
+
+<script>
+    const input = document.getElementById("input");
+    console.log(input.getAttribute("checked"));
+    console.log(input.checked);
+
+    const div = document.getElementById("div");
+    console.log(div.getAttribute("style"));
+    console.log(div.style);
+
+    const a = document.getElementById("a");
+    console.log(a.getAttribute("href"));
+    console.log(a.href);
+</script>
+</body>
+</html>

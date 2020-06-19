@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.body.myData = {
+        name: "Caesar",
+        title: "Imperator"
+    };
+
+    console.log(document.body.myData.title);
+
+    document.body.sayTagName = function() {
+        console.log(this.tagName);
+    };
+
+    document.body.sayTagName();
+
+    Element.prototype.sayHi = function () {
+        console.log(`Hello, I'm ${this.tagName}`);
+    };
+
+    document.documentElement.sayHi();
+    document.body.sayHi();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .order[data-order-state="new"] {
+            color: green;
+        }
+
+        .order[data-order-state="pending"] {
+            color: blue;
+        }
+
+        .order[data-order-state="canceled"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="order" data-order-state="new">A new order.</div>
+<div class="order" data-order-state="pending">A pending order.</div>
+<div class="order" data-order-state="canceled">A canceled order.</div>
+
+<script>
+    const order = document.querySelector(".order");
+    console.log(order.dataset.orderState);
+    order.dataset.orderState = "pending";
+</script>
+</body>
+</html>

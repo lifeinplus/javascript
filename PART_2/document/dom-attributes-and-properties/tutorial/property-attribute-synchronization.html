@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input>
+
+<script>
+    const input = document.querySelector("input");
+
+    input.setAttribute("id", "aaa");
+    input.setAttribute("value", "111");
+    console.log("id: " + input.id);
+    console.log("value: " + input.value);
+
+    input.id = "bbb";
+    input.value = "222";
+    console.log("id: " + input.getAttribute("id"));
+    console.log("value: " + input.getAttribute("value"));
+</script>
+</body>
+</html>

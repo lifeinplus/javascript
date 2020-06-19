@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div show-info="name"></div>
+<div show-info="age"></div>
+
+<script>
+    const user = {
+        name: "Pete",
+        age: 25
+    };
+
+    for (let div of document.querySelectorAll("[show-info]")) {
+        let field = div.getAttribute("show-info");
+        div.innerHTML = user[field];
+    }
+</script>
+</body>
+</html>
