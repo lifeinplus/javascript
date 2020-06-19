@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="news">
+    <h1>Headline!</h1>
+    <p>Martians attack people!</p>
+</div>
+
+<div id="elem1"></div>
+<div id="elem2"></div>
+<script>
+    const news = document.getElementById("news");
+    console.log(news.textContent);
+
+    const name = prompt("What's your name?", "<b>Winnie-the-pooh!</b>");
+    const elem1 = document.getElementById("elem1");
+    const elem2 = document.getElementById("elem2");
+    elem1.innerHTML = name;
+    elem2.textContent = name;
+</script>
+</body>
+</html>

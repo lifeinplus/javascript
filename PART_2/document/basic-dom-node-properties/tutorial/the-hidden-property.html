@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Both divs below are hidden</div>
+<div hidden>With the attribute "hidden"</div>
+<div id="elem1">JavaScript assigned the property "hidden"</div>
+<div id="elem2">A blinking element</div>
+<script>
+    const elem1 = document.getElementById("elem1");
+    elem1.hidden = true;
+
+    const elem2 = document.getElementById("elem2");
+    setInterval(() => elem2.hidden = !elem2.hidden, 1000);
+</script>
+</body>
+</html>
