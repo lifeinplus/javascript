@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="elem1"></div>
+<div id="elem2"></div>
+<div id="elem3"></div>
+<script>
+    const text = "<b>text</b>";
+
+    const elem1 = document.getElementById("elem1");
+    const elem2 = document.getElementById("elem2");
+    const elem3 = document.getElementById("elem3");
+
+    elem1.append(document.createTextNode(text));
+    elem2.innerHTML = text;
+    elem3.textContent = text;
+</script>
+</body>
+</html>

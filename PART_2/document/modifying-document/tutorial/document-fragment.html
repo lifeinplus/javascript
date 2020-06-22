@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="ul1"></ul>
+<ul id="ul2"></ul>
+<script>
+    function getListContent1() {
+        const fragment = new DocumentFragment();
+
+        for (let i = 1; i <= 3; i++) {
+            let li = document.createElement("li");
+            li.append(i);
+            fragment.append(li);
+        }
+
+        return fragment;
+    }
+
+    function getListContent2() {
+        const result = [];
+
+        for (let i = 1; i <= 3; i++) {
+            let li = document.createElement("li");
+            li.append(i);
+            result.push(li);
+        }
+
+        return result;
+    }
+
+    const ul1 = document.getElementById("ul1");
+    ul1.append(getListContent1());
+
+    const ul2 = document.getElementById("ul2");
+    ul2.append(...getListContent2());
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .alert {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            background-color: #dff0d8;
+        }
+    </style>
+</head>
+<body>
+<div id="div">div</div>
+
+<script>
+    const div = document.getElementById("div");
+    div.insertAdjacentHTML("beforebegin", "<p>Hello</p>");
+    div.insertAdjacentHTML("afterend", "<p>Bye</p>");
+
+    document.body.insertAdjacentHTML("afterbegin", `<div class="alert">
+        <strong>Hi there!</strong> You've read an important message. JS body afterbegin
+    </div>`);
+</script>
+</body>
+</html>

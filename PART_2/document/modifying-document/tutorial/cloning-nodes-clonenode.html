@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .alert {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            background-color: #dff0d8;
+        }
+    </style>
+</head>
+<body>
+<div class="alert" id="div1">
+    <strong>Hi there!</strong> You've read an important message. HTML
+</div>
+
+<script>
+    const div1 = document.getElementById("div1");
+    const div2 = div1.cloneNode(true);
+    div2.querySelector("strong").innerHTML = "Bye there!";
+    div1.after(div2);
+</script>
+</body>
+</html>

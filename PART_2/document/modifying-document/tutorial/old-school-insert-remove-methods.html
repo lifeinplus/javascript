@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ol id="list">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+</ol>
+
+<script>
+    const list = document.getElementById("list");
+
+    const helloLi = document.createElement("li");
+    helloLi.innerHTML = "Hello, world!";
+    list.appendChild(helloLi);
+
+    const byeLi = document.createElement("li");
+    byeLi.innerHTML = "Bye, world!";
+    list.insertBefore(byeLi, helloLi);
+
+    const firstElementChild = list.children[1];
+    setTimeout(() => list.removeChild(firstElementChild), 1000);
+</script>
+</body>
+</html>

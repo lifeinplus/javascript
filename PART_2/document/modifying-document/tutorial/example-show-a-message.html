@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .alert {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            background-color: #dff0d8;
+        }
+    </style>
+</head>
+<body>
+<div class="alert">
+    <strong>Hi there!</strong> You've read an important message. HTML
+</div>
+
+<script>
+    const alert = document.querySelector(".alert");
+    alert.before("JS before");
+    alert.after("JS after");
+
+    const divAppend = document.createElement("div");
+    divAppend.className = "alert";
+    divAppend.innerHTML = "<strong>Hi there!</strong> You've read an important message. JS append";
+    document.body.append(divAppend);
+
+    const divPrepend = document.createElement("div");
+    divPrepend.className = "alert";
+    divPrepend.innerHTML = "<strong>Hi there!</strong> You've read an important message. JS prepend";
+    document.body.prepend(divPrepend);
+</script>
+</body>
+</html>

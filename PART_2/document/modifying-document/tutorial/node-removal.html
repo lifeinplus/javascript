@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .alert {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            background-color: #dff0d8;
+        }
+    </style>
+</head>
+<body>
+<div id="first">First</div>
+<div id="second">Second</div>
+
+<script>
+    const div = document.createElement("div");
+    div.className = "alert";
+    div.innerHTML = "<strong>Hi there!</strong> You've read an important message. JS append";
+
+    document.body.append(div);
+    setTimeout(() => div.remove(), 1000);
+
+    const first = document.getElementById("first");
+    const second = document.getElementById("second");
+    second.after(first);
+</script>
+</body>
+</html>
