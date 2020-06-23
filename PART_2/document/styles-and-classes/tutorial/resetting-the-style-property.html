@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">Button1</div>
+<div id="div2">Button2</div>
+<script>
+    const div1 = document.getElementById("div1");
+    const div2 = document.getElementById("div2");
+
+    div1.style.cssText = `color: red !important;
+    background-color: yellow;
+    width: 100px;
+    text-align: center;`;
+
+    div2.setAttribute("style", `color: blue !important;
+    background-color: green;
+    width: 100px;
+    text-align: center;`);
+
+    setTimeout(() => document.body.style.display = "none", 1000);
+</script>
+</body>
+</html>

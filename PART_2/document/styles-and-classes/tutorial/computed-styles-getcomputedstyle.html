@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            color: red;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+The red text
+<script>
+    console.log(document.body.style.color);
+    console.log(document.body.style.margin);
+
+    const computedStyle = getComputedStyle(document.body);
+
+    console.log(computedStyle.color);
+    console.log(computedStyle.margin);
+</script>
+</body>
+</html>
