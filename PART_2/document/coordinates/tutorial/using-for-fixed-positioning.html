@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<input id="coords-show-mark"
+       onclick="showMessage()"
+       type="button"
+       value="Button with id=“coords-show-mark”, the message will appear under it">
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<div>aaa</div>
+<script>
+    function createMessageUnder(elem, html) {
+        const result = document.createElement("div");
+        const coords = elem.getBoundingClientRect();
+
+        result.style.cssText = "position:fixed; color:red";
+        result.style.left = coords.left + "px";
+        result.style.top = coords.bottom + "px";
+        result.innerHTML = html;
+
+        return result;
+    }
+
+    function showMessage() {
+        const element = document.getElementById("coords-show-mark");
+        const message = createMessageUnder(element, "Hello, world!");
+        document.body.append(message);
+        setTimeout(() => message.remove(), 5000);
+    }
+</script>
+</body>
+</html>

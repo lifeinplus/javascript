@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        document.onclick = function (ev) {
+            const element = document.getElementById("coords");
+            element.innerHTML = ev.clientX + ":" + ev.clientY;
+        }
+    </script>
+</head>
+<body>
+Click anywhere to get window coordinates.<br>
+That's for testing, to check the result you get by JavaScript.<br>
+<div id="coords">(click coordinates show up here)</div>
+<div id="field">
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . .
+</div>
+<div class="triangle-right" style="left: -20px; top: -176px">1</div>
+<div class="triangle-right" style="left: -10px; top: -178px">3</div>
+<div class="triangle-right" style="left: 190px; top: -40px">4</div>
+<div class="triangle-right" style="left: 200px; top: -42px">2</div>
+<script>
+    const field = document.getElementById("field");
+    const coords = field.getBoundingClientRect();
+    const computedStyle = getComputedStyle(field);
+
+    const answer1 = [coords.left, coords.top];
+    const answer2 = [coords.right, coords.bottom];
+    const answer3 = [coords.left + field.clientLeft, coords.top + field.clientTop];
+
+    const answer41 = [
+        coords.right - parseInt(computedStyle.borderRightWidth),
+        coords.bottom - parseInt(computedStyle.borderBottomWidth)
+    ];
+
+    const answer42 = [
+        coords.left + field.clientLeft + field.clientWidth,
+        coords.top + field.clientTop + field.clientHeight
+    ];
+
+    console.log("1:" + answer1);
+    console.log("2:" + answer2);
+    console.log("3:" + answer3);
+    console.log("4.1:" + answer41);
+    console.log("4.2:" + answer42);
+</script>
+</body>
+</html>
