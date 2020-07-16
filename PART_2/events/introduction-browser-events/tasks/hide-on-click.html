@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="hider" value="Click to hide the text">
+<div id="text">Text</div>
+<script>
+    const hider = document.getElementById("hider");
+    const text = document.getElementById("text");
+
+    hider.onclick = function () {
+        text.hidden = true;
+    }
+</script>
+</body>
+</html>
