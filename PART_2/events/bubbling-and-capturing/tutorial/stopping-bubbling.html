@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onclick="console.log(`the bubbling doesn't reach here`)">
+<button onclick="event.stopPropagation()">Click me</button>
+</body>
+</html>
