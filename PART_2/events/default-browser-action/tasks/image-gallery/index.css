@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 75%/120% sans-serif;
+}
+
+#largeImg {
+    border: 1px solid #cccccc;
+    width: 550px;
+    height: 400px;
+    padding: 5px;
+}
+
+#thumbs a {
+    border: 1px solid #cccccc;
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin: 2px;
+    float: left;
+}
+
+#thumbs a:hover {
+    border-color: #ff9900;
+}
+
+#thumbs li {
+    list-style: none;
+}
+
+#thumbs {
+    margin: 0;
+    padding: 0;
+}
