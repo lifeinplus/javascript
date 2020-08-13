@@ -1,0 +1,66 @@
+#text {
+    display: block;
+    height: 200px;
+    width: 500px;
+}
+
+#table th {
+    text-align: center;
+    font-weight: bold;
+}
+
+#table td {
+    width: 150px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+#table .nw {
+    background: #999999;
+}
+
+#table .n {
+    background: #0033ff;
+    color: #fff;
+}
+
+#table .ne {
+    background: #ffff66;
+}
+
+#table .w {
+    background: #ffff00;
+}
+
+#table .c {
+    background: #6600cc;
+    color: #fff;
+}
+
+#table .e {
+    background: #0099ff;
+    color: #fff;
+}
+
+#table .sw {
+    background: #963;
+    color: #fff;
+}
+
+#table .s {
+    background: #f60;
+    color: #fff;
+}
+
+#table .se {
+    background: #0c3;
+    color: #fff;
+}
+
+#table .highlight {
+    background: red;
+}
