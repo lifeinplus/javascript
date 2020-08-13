@@ -18,8 +18,9 @@
   "homepage": "https://github.com/lifeinplus/javascript#readme",
   "dependencies": {
     "full-icu": "^1.3.1",
-    "lodash": "^4.17.15",
-    "node-fetch": "^2.6.0"
+    "lodash": ">=4.17.19",
+    "node-fetch": "^2.6.0",
+    "sinon": "^9.0.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",
