@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input onkeydown="return checkPhoneKey(event.key)" placeholder="Phone, please" type="tel">
+
+<script>
+    function checkPhoneKey(key) {
+        return (key >= "0" && key <= "9")
+            || ["+", "(", ")", "-", "ArrowLeft", "ArrowRight", "Delete", "Backspace"].includes(key);
+    }
+</script>
+
+</body>
+</html>
