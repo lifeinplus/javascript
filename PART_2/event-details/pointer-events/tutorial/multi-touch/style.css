@@ -1,0 +1,8 @@
+#area {
+    border: 1px solid black;
+    width: 90%;
+    height: 180px;
+    cursor: pointer;
+    overflow: scroll;
+    user-select: none;
+}
